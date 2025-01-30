@@ -1,0 +1,28 @@
+<!-- <p>form works!</p> -->
+
+
+
+<p *ngIf="isAllowed">hello world</p>
+
+
+
+<!-- ngFor eg -->
+<div *ngFor="let user of userlist">
+    <ul>
+        <li>{{user.name}}</li>
+        <li>{{user.age}}</li>
+    </ul>
+</div>
+
+<!-- ngSwitch eg -->
+ <div>
+    <p [ngSwitch]="selectedValue">
+        <span *ngSwitchCase="'red'">this is red</span>
+        <span *ngSwitchCase="'blue'">this is blue</span>
+        <span *ngSwitchDefault>this is default</span>
+    </p>
+ </div>
+
+ <p [ngStyle]="{color:paracolor}">hello</p>
+
+ <p [ngClass]="{'active':isActive}">hello world</p>
